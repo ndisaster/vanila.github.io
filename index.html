@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producing</title>
+</head>
+<style>
+    @import 'index.css';
+</style>
+<body>
+    <div class="first-div">
+        <div class="h1-box">
+            <h1 class="h1">hell prod.</h1>
+            <h1 class="h1">hell prod.</h1>
+        </div>
+    </div>
+    <div class="second-div">
+        <div class="parent-div-first">
+            <div class="child-div-first">
+                <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614254929_33-p-oboi-s-chernim-fonom-39.jpg" alt="" class="img-child-first">
+                <div class="text-child-first">
+                <h1 class="h1-child-first">Кто мы такие?</h1>
+                <p class="p-child-first">Мы (hell prod.) — Компания, занимающаяся разработкой и продвижением ваших онлайн-стартапов, от веб-страницы до крупного магазина.</p>
+                </div>
+            </div>
+            </div>
+            <div class="parent-div-second">
+                <div class="child-div-second">
+                    <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614254929_33-p-oboi-s-chernim-fonom-39.jpg" alt="" class="img-child-second">
+                    <div class="text-child-second">
+                        <h1 class="h1-child-second">New Design</h1>
+                        <p class="p-child-second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem, quasi debitis velit pariatur neque cupiditate placeat magnam culpa amet perspiciatis aut quos tenetur quis eligendi cum enim ducimus.</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div class="prices">
+        <div class="price">
+            <h1 class="nitro">Nitro Basic x1 Monthly</h1>
+        </div>
+        <div class="price fyp">
+            <h1 class="nitro fy"> Nitro Full x1 Yearly</h1>
+        </div>
+        <div class="price">
+            <h1 class="nitro">Nitro Full x1 Monthly</h1>
+        </div>
+    </div>
+    <script>
+        let animationBlocks = document.querySelectorAll('.animation');
+		let observer = new IntersectionObserver((entries)=> {
+			for (let i = 0; i < entries.length; i++) {
+				if(entries[i].isIntersecting === true) {
+					entries[i].target.classList.add('show')
+				} else {
+					entries[i].target.classList.remove('show')
+				}
+			}
+		});
+    </script>
+</body>
+</html>
